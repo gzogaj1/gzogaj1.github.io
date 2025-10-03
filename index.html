@@ -5,35 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Emri Mbiemri</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    h2 { margin-top: 20px; color: #34495e; }
-    .section { margin-bottom: 25px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #2980b9;
+    }
+    header p {
+      margin: 5px 0;
+    }
+    h2 {
+      color: #34495e;
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .skill-list, .lang-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .badge {
+      background: #3498db;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <h1>Emri Mbiemri</h1>
-  <p>Email: <a href="mailto:ti@email.com">ti@email.com</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/profiliyt">linkedin.com/in/profiliyt</a></p>
-  <p>GitHub: <a href="https://github.com/emrimbiemri">github.com/emrimbiemri</a></p>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>Emri Mbiemri</h1>
+      <p>Email: <a href="mailto:ti@email.com">ti@email.com</a></p>
+      <p>Tel: +355 XX XXX XXXX</p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/profili</a> | GitHub: <a href="#">github.com/emrimbiemri</a></p>
+    </header>
 
-  <div class="section">
-    <h2>Përvoja e Punës</h2>
-    <ul>
-      <li><b>Pozicioni</b> – Kompania (Vitet)</li>
-      <li><b>Internship</b> – Kompania (Vitet)</li>
-    </ul>
-  </div>
+    <!-- PROFILI -->
+    <div class="section">
+      <h2>Profili Personal</h2>
+      <p>Një përshkrim i shkurtër rreth vetes, eksperiencës suaj p
 
-  <div class="section">
-    <h2>Arsimi</h2>
-    <p>Universiteti X – Bachelor/Master (Vitet)</p>
-  </div>
-
-  <div class="section">
-    <h2>Aftësitë</h2>
-    <p>Programim: Python, JavaScript, HTML, CSS</p>
-    <p>Gjuhë: Shqip, Anglisht</p>
-  </div>
-</body>
 </html>
