@@ -2,90 +2,144 @@
 <html lang="sq">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Gani Zogaj</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f7fb; color: #2c3e50; }
-    .container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    header { text-align: center; border-bottom: 3px solid #3498db; padding-bottom: 15px; }
-    header h1 { margin: 0; color: #2980b9; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fb; color: #333; }
+    .container { max-width: 1100px; margin: auto; background: #fff; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    header { display: flex; align-items: center; border-bottom: 3px solid #0056a3; padding-bottom: 20px; }
+    header img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #ddd; margin-right: 20px; }
+    header h1 { margin: 0; color: #0056a3; }
     header p { margin: 5px 0; }
-    h2 { border-left: 5px solid #3498db; padding-left: 10px; margin-top: 25px; color: #34495e; }
-    ul { padding-left: 20px; }
-    ul li { margin-bottom: 8px; }
-    .badge { display: inline-block; background: #3498db; color: #fff; padding: 4px 10px; border-radius: 12px; margin: 3px; font-size: 0.9em; }
+    h2 { margin-top: 30px; border-bottom: 2px solid #0056a3; padding-bottom: 5px; color: #0056a3; }
+    .section { margin-top: 20px; }
+    .experience, .education, .training { margin-bottom: 15px; }
+    .date { font-weight: bold; color: #444; width: 200px; float: left; }
+    .details { margin-left: 220px; }
+    ul { margin: 5px 0 10px 20px; }
+    .skills span, .languages span { display: inline-block; background: #0056a3; color: #fff; padding: 5px 10px; border-radius: 12px; margin: 3px; }
+    a { color: #0056a3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="container">
     <!-- HEADER -->
     <header>
-      <h1>Gani Zogaj</h1>
-      <p>Email: <a href="mailto:Gani.zogaj@rks-gov.net">Gani.zogaj@rks-gov.net</a> | Tel: +383 44 211 969</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/gani-zogaj-5a7489166/">linkedin.com/in/gani-zogaj</a></p>
-      <p>Adresa: Rilindja Building, Office 204, 10000 Prishtinë, Kosovo</p>
+      <img src="4433d941-982a-4a90-8677-a339a5c9622a.png" alt="Foto Profili">
+      <div>
+        <h1>Gani Zogaj</h1>
+        <p><i class="fa fa-envelope"></i> Gani.zogaj@rks-gov.net | <i class="fa fa-phone"></i> +383 44 211 969</p>
+        <p><i class="fab fa-linkedin"></i> 
+           <a href="https://www.linkedin.com/in/gani-zogaj-5a7489166/">linkedin.com/in/gani-zogaj</a></p>
+        <p><i class="fa fa-location-dot"></i> Rilindja Building, Office 204, 10000 Prishtinë, Kosovo</p>
+        <p><b>Datëlindja:</b> 23/02/1976, Istog, Kaliqan | <b>Nacionaliteti:</b> Kosovar | <b>Gjinia:</b> Mashkull</p>
+      </div>
     </header>
 
     <!-- PËRVOJA E PUNËS -->
     <h2>Përvoja e Punës</h2>
-    <ul>
-      <li><b>University Lecturer</b> – Kolegji AAB, Prishtinë (2021 – sot)</li>
-      <li><b>Head of Directorate for IT Security & Operation Center</b> – Agency of Information Society, MIA, Kosovo (2014 – sot)</li>
-      <li><b>Head of Division of Security and Central Operations</b> – Kosovo Government (2008 – 2014)</li>
-      <li><b>ICT System Administrator</b> – Kosovo Government (2004 – 2008)</li>
-    </ul>
+    <div class="experience">
+      <div class="date">2021 – Sot</div>
+      <div class="details">
+        <b>University Lecturer</b> – Kolegji AAB, Prishtinë  
+        <ul>
+          <li>Përgatitje syllabusi, integrim i certifikatave CEH, OSCP, CompTIA.</li>
+          <li>Ligjërata mbi Ethical Hacking, Vulnerability Analysis, Incident Lifecycle.</li>
+          <li>Mbikëqyrje laboratorësh, mentorim studentësh, publikime akademike.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="date">2014 – Sot</div>
+      <div class="details">
+        <b>Head of Directorate for IT Security & Operation Center</b> – Agency of Information Society, MIA, Kosovo  
+        <ul>
+          <li>Administrim i serverëve (Exchange, DNS, DHCP, Proxy, Cisco ASA, Firewalls, Data Center).</li>
+          <li>Draftim i politikave dhe standardeve të sigurisë së IT për qeverinë.</li>
+          <li>Koordinim i CERT (Computer Emergency Response Team) të Qeverisë së Kosovës.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="date">2008 – 2014</div>
+      <div class="details">
+        <b>Head of Division of Security and Central Operations</b> – Kosovo Government  
+        <ul>
+          <li>Menaxhim i infrastrukturës IT dhe sigurisë qeveritare.</li>
+          <li>Mbikëqyrje e stafit, buxhetit dhe projekteve strategjike të sigurisë.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="date">2004 – 2008</div>
+      <div class="details">
+        <b>ICT System Administrator</b> – Kosovo Government  
+        <ul>
+          <li>Administrim i serverëve, rrjeteve dhe sistemeve qeveritare.</li>
+          <li>Siguri dhe mirëmbajtje e infrastrukturës qendrore IT.</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- EDUKIMI -->
     <h2>Edukimi</h2>
-    <ul>
-      <li>PhD Candidate – South East European University, Tetovë (2021 – sot)</li>
-      <li>Master of Science – American University in Kosovo / RIT (2009 – 2012)</li>
-      <li>Graduate Electrical Engineer – Universiteti i Prishtinës (2004)</li>
-    </ul>
+    <div class="education">
+      <div class="date">2021 – Sot</div>
+      <div class="details">PhD Candidate – South East European University, Tetovë (Computer Sciences)</div>
+    </div>
+    <div class="education">
+      <div class="date">2009 – 2012</div>
+      <div class="details">Master of Science – American University in Kosovo / RIT</div>
+    </div>
+    <div class="education">
+      <div class="date">2004</div>
+      <div class="details">Graduate Electrical Engineer – Universiteti i Prishtinës (300 ECTS)</div>
+    </div>
 
     <!-- TRAJNIMET & CERTIFIKATAT -->
     <h2>Trajnime & Certifikata</h2>
     <ul>
       <li>CCNA & CCNP – Cisco (2020)</li>
-      <li>CEH (Certified Ethical Hacker), EC-Council Certified Security Analyst v10, CISM, ISO/IEC 27001 Foundation (2019–2021)</li>
+      <li>CEH (Certified Ethical Hacker), EC-Council CSA v10, CISM, ISO/IEC 27001 Foundation (2019–2021)</li>
       <li>Digital & Online Privacy for Policymakers – Carnegie Mellon University (2024)</li>
-      <li>Train the Trainer (Cyber Hygiene, Austria, Estonia, UK)</li>
-      <li>LogRhythm 301 Administration Fundamentals (2023)</li>
-      <li>IBM FlashSystem Implementation Workshop (2025)</li>
-      <li>HPE Synergy Overview & Management (2025)</li>
+      <li>Train the Trainer – Cyber Hygiene, Austria, Estonia, UK</li>
+      <li>LogRhythm – 301 Administration Fundamentals (2023)</li>
+      <li>IBM FlashSystem Workshop (2025)</li>
+      <li>HPE Synergy Training (2025)</li>
     </ul>
 
     <!-- PUBLIKIMET -->
     <h2>Publikimet</h2>
     <ul>
-      <li>“Virtualization and shared Infrastructure data storage for IT in Kosovo institutions” (2012)</li>
-      <li>“Virtualization's Impact on Cybersecurity...” – IEEE MECO2025 Conference (2025)</li>
+      <li>Virtualization and shared Infrastructure data storage for IT in Kosovo institutions (2012)</li>
+      <li>Virtualization’s Impact on Cybersecurity... IEEE MECO2025 Conference (2025)</li>
     </ul>
 
     <!-- PROJEKTET -->
     <h2>Projektet</h2>
     <ul>
-      <li>Critical Infrastructure Digitalization and Resilience (CIDR) Kosovo (2021–2024)</li>
+      <li>Critical Infrastructure Digitalization and Resilience (CIDR), Kosovo (2021–2024)</li>
       <li>World Bank Projects – Government Data Center (2014)</li>
     </ul>
 
-    <!-- AFTËSITË -->
-    <h2>Aftësitë</h2>
-    <div>
-      <span class="badge">Cybersecurity</span>
-      <span class="badge">Network Administration</span>
-      <span class="badge">Microsoft Office</span>
-      <span class="badge">Cisco Systems</span>
-      <span class="badge">Organizational & Planning</span>
-      <span class="badge">Teamwork</span>
-    </div>
-
     <!-- GJUHËT -->
     <h2>Gjuhët</h2>
-    <div>
-      <span class="badge">Shqip (amtare)</span>
-      <span class="badge">Anglisht (C2)</span>
-      <span class="badge">Gjermanisht (A1)</span>
+    <div class="languages">
+      <span>Shqip (amtare)</span>
+      <span>Anglisht (C2)</span>
+      <span>Gjermanisht (A1)</span>
+    </div>
+
+    <!-- AFTËSITË -->
+    <h2>Aftësitë</h2>
+    <div class="skills">
+      <span>Cybersecurity</span>
+      <span>Network Administration</span>
+      <span>Cisco Systems</span>
+      <span>Microsoft Office</span>
+      <span>Organizational & Planning</span>
+      <span>Teamwork</span>
     </div>
   </div>
 </body>
